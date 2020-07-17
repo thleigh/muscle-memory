@@ -144,8 +144,7 @@ paraSeven.classList.add("paragraph-seven");
 paraSeven.textContent = "Kelly Oubre";
 
 //append the container to the body
-const body1 = document.querySelector("body");
-body1.appendChild(containerSeven);
+body.appendChild(containerSeven);
 
 //append section to the container
 containerSeven.appendChild(sectionSeven);
