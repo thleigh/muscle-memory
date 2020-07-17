@@ -97,3 +97,59 @@ paraFour.textContent = "Kyrie Irving";
 const paraFive = document.querySelector(".paragraph-five");
 console.log(paraFive);
 paraFive.textContent = "Kawhi Leonard";
+
+const containerSix = document.createElement("div");
+containerSix.classList.add('container-six');
+console.log(containerSix);
+
+const sectionSix = document.createElement("h2");
+sectionSix.setAttribute("id", "section-six");
+sectionSix.textContent = "Rockets";
+console.log(sectionSix);
+
+const paraSix = document.createElement("p");
+paraSix.classList.add("paragraph-six");
+paraSix.textContent = "James Harden";
+console.log(paraSix);
+
+const body = document.querySelector("body");
+console.log(body);
+
+body.appendChild(containerSix);
+containerSix.appendChild(sectionSix);
+containerSix.appendChild(paraSix);
+
+//create another container
+const containerSeven = document.createElement("div");
+
+//add class
+containerSeven.classList.add("container-seven");
+
+//create another section
+const sectionSeven = document.createElement("h2");
+
+//add id
+sectionSeven.setAttribute("id", "section-Seven");
+
+//add text content
+sectionSeven.textContent = "Suns";
+
+//create another paragraph
+const paraSeven = document.createElement("p");
+
+//add a class
+paraSeven.classList.add("paragraph-seven");
+
+//add text content
+paraSeven.textContent = "Kelly Oubre";
+
+//append the container to the body
+const body1 = document.querySelector("body");
+body1.appendChild(containerSeven);
+
+//append section to the container
+containerSeven.appendChild(sectionSeven);
+
+//append the paragraph to the container
+containerSeven.appendChild(paraSeven);
+
