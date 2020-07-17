@@ -22,24 +22,37 @@ let objectOne = {
 //.... freestyle
 
 function passArray(array) {
-    console.log(array);
+    let result = [];
+    
+    for (let i = 0; i < array.length; i++) {
+        let count = array[i];
+        if (count.length > 1) {
+            result.push(count);
+        }
+    }
+    return result
 }
 passArray(arrayOne);
 
-function passCallback() {
-
+function passCallback(callback, array) {
+    let result = callback(array)[0];
+    console.log(result);
 }
+passCallback(passArray, arrayOne);
 
 function passString(string) {
     console.log(string);
 }
 passString(stringOne);
 
-function booleanPractice(element) {
-    if (element === objectOne.name) {
-        return element;
+function booleanPractice(boolean) {
+    if (boolean) {
+        console.log("this works");
     }
 }
-booleanPractice("Tanner")
+booleanPractice(booleanOne)
 
-
+function printHobbies(object) {
+    console.log(object.hobbies);
+}
+printHobbies(objectOne);
